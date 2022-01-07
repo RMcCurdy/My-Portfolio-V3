@@ -1,13 +1,231 @@
+/* This ensures there are no margins added by default */
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --background: #0a0613;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --blue: #5383e8;
+}
+
+/* Variants of the SourceSansPro font to be used in font-family style */
+@font-face {
+    font-family: 'Source-L';
+    src: url('./fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source-R';
+    src: url('./fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source-B';
+    src: url('./fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('./fonts/Lobster-Regular.ttf') format('truetype');
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-primary {
+    color: white;
+    font-family: 'Source-B';
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.heading-secondary {
+    color: black;
+    font-family: 'Source-B';
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.text-primary {
+    color: white;
+    font-family: 'Source-R';
+    font-size: 2rem;
+}
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+/* Navbar */
+
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+.navbar-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source-B';
+    font-size: 1.2rem;
+}
+
+/* Add margin to all children of the navbar-links-container div */
+.navbar-links-container > * {
+    padding: 0 2rem;
+}
+
+.navbar-link {
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar-link:hover {
+    cursor: pointer;
+}
+
+.navbar-link-color-animation {
+    transition: color 0.25s;
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    -ms-transition: color 0.25s;
+}
+
+.navbar-link-color-animation:hover {
+    color: var(--blue);
+}
+
+#navbar-logo {
+    font-size: 3.75rem;
+    padding: 0 0.5rem;
+    font-family: 'Lobster';
+    font-weight: 800;
+    color: black;
+    background: linear-gradient(
+        to right,
+        var(--blue),
+        var(--blue) 50%,
+        black 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.35s ease;
+}
+
+#navbar-logo:hover {
+    background-position: 0 100%;
+    cursor: pointer;
+}
+
+/* Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+.home-text-container {
+    text-align: center;
+}
+
+.home-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.home-icons-container > * {
+    color: white;
+    margin: 0 2rem;
+}
+
+.home-icons {
+    transform: scale(2.5);
+}
+
+.home-icons:hover {
+    cursor: pointer;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-height: 120vh;
+}
+
+.about-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.about-me-container {
+}
+
+.about-my-skills-container {
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-height: 120vh;
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-height: 120vh;
+}
+
+/* Media Query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
