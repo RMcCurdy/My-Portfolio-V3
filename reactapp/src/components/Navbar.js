@@ -1,18 +1,26 @@
 import { Link } from 'react-scroll';
+import RobertIcon from '../images/robert-sunglasses-circle-crop.png';
 
 const Navbar = () => {
     return (
         <div className='navbar-container'>
             <div className='navbar-content-container'>
-                <Link
-                    activeClass='active'
-                    id='navbar-logo'
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    duration={500}>
-                    robert
-                </Link>
+                <div className='navbar-icon-and-name-container'>
+                    <img
+                        className='robert-sunglasses-icon'
+                        src={RobertIcon}
+                        alt='robert'
+                    />
+                    <Link
+                        activeClass='active'
+                        id='navbar-logo'
+                        to='home'
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
+                        robert
+                    </Link>
+                </div>
                 <div className='navbar-links-container'>
                     <Link
                         activeClass='active'

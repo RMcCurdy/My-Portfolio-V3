@@ -8,10 +8,9 @@ body {
 }
 
 :root {
-    --background: #0a0613;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --blue: #5383e8;
+    --white-dark: hsl(0, 0%, 95%);
+    --blue-hsl: rgba(0, 119, 181, 0.8);
+    --blue: rgba(0, 119, 181, 0.8);
 }
 
 /* Variants of the SourceSansPro font to be used in font-family style */
@@ -48,12 +47,25 @@ a {
     font-family: 'Source-B';
     font-size: 3.5rem;
     text-transform: uppercase;
+    border-bottom: 2px solid var(--blue);
+}
+
+.heading-section {
+    color: black;
+    font-family: 'Source-B';
+    font-size: 2rem;
 }
 
 .text-primary {
     color: white;
     font-family: 'Source-R';
     font-size: 2rem;
+}
+
+.paragraph-primary {
+    color: black;
+    font-family: 'Source-R';
+    font-size: 1.2rem;
 }
 
 .section-padding {
@@ -74,7 +86,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 9rem;
 }
 
 .navbar-links-container {
@@ -112,7 +124,7 @@ a {
 }
 
 #navbar-logo {
-    font-size: 3.75rem;
+    font-size: 3rem;
     padding: 0 0.5rem;
     font-family: 'Lobster';
     font-weight: 800;
@@ -136,14 +148,43 @@ a {
     cursor: pointer;
 }
 
+.navbar-icon-and-name-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.robert-sunglasses-icon {
+    height: 3rem;
+    border-radius: 50%;
+}
+
 /* Home */
 .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: var(--blue);
+    height: 95vh;
+    background: linear-gradient(
+            to right,
+            rgba(0, 119, 181, 0.8),
+            rgba(0, 119, 181, 0.8)
+        ),
+        url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 119, 181, 0.8),
+            rgba(0, 119, 181, 0.8)
+        ),
+        url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial, initial;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
 }
 
 .home-text-container {
@@ -181,14 +222,25 @@ a {
 
 .about-content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    grid-template-columns: 0.7fr 0.7fr;
     grid-gap: 10rem;
 }
 
-.about-me-container {
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.about-my-skills-container {
+.skill {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Source-R';
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    color: #666;
 }
 
 /* Projects */
@@ -198,6 +250,7 @@ a {
     align-items: center;
     min-height: 80vh;
     max-height: 120vh;
+    background-color: var(--white-dark);
 }
 
 /* Contact */
@@ -209,9 +262,29 @@ a {
     max-height: 120vh;
 }
 
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-hsl);
+    min-height: 30vh;
+    max-height: 50vh;
+}
+
 /* Media Query */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .photo-card-container {
+        display: block;
+    }
+    .about-content-container {
+        display: block;
+        justify-content: center;
+    }
+    .photo-card {
+        width: 90vw;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
