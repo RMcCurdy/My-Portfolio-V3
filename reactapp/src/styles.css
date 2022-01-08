@@ -151,7 +151,7 @@ a {
 .navbar-icon-and-name-container {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    /* gap: 0.3rem; */
 }
 
 .robert-sunglasses-icon {

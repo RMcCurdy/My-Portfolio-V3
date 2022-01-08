@@ -6,11 +6,6 @@ const Navbar = () => {
         <div className='navbar-container'>
             <div className='navbar-content-container'>
                 <div className='navbar-icon-and-name-container'>
-                    <img
-                        className='robert-sunglasses-icon'
-                        src={RobertIcon}
-                        alt='robert'
-                    />
                     <Link
                         activeClass='active'
                         id='navbar-logo'
