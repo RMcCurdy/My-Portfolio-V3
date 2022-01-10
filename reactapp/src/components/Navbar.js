@@ -7,9 +7,13 @@ const Navbar = () => {
             <div className='navbar-content-container'>
                 <div className='navbar-icon-and-name-container'>
                     <img className='robert-sunglasses-icon' src={RobertIcon} alt='robert' />
-                    <Link activeClass='active' id='navbar-logo' to='home' spy={true} smooth={true} duration={500}>
+                    <div
+                        onClick={() => {
+                            window.location.reload(false);
+                        }}
+                        id='navbar-logo'>
                         robert
-                    </Link>
+                    </div>
                 </div>
                 <div className='navbar-links-container'>
                     <Link activeClass='active' className='navbar-link navbar-link-color-animation' to='home' spy={true} smooth={true} duration={500}>

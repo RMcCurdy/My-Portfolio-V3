@@ -57,6 +57,7 @@ textarea {
     color: black;
     font-family: 'Source-B';
     font-size: 2.5rem;
+    margin-top: 0rem;
     margin-bottom: 0.5rem;
 }
 
@@ -246,6 +247,7 @@ textarea {
 
 .about-skills-container {
     display: flex;
+    flex: 1 auto;
     max-width: 75%;
 }
 
@@ -272,6 +274,7 @@ textarea {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: auto;
 }
 
 .skill {
@@ -355,6 +358,33 @@ textarea {
     flex-direction: column;
     align-items: center;
     min-height: 80vh;
+    background: linear-gradient(
+            to right,
+            rgba(0, 119, 181, 0.8),
+            rgba(0, 119, 181, 0.8)
+        ),
+        url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 119, 181, 0.8),
+            rgba(0, 119, 181, 0.8)
+        ),
+        url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial, initial;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+}
+
+.conact-heading {
+    color: white;
+    font-family: 'Source-B';
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
 }
 
 .contact-content-container {
@@ -365,6 +395,7 @@ textarea {
     margin: 20px 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
     width: 30rem;
+    background-color: white;
 }
 
 .contact-input-field {
@@ -393,6 +424,7 @@ textarea {
 }
 
 .contact-btn-container {
+    display: flex;
     align-self: flex-end;
 }
 
@@ -403,7 +435,7 @@ textarea {
 
 /* Footer */
 .footer-container {
-    background-color: var(--blue);
+    background-color: #333;
     min-height: 20vh;
     overflow-y: hidden;
 }
