@@ -24,18 +24,20 @@ const Contact = () => {
             },
             body: JSON.stringify(mailObject),
         })
-            .then((response) => response.text())
-            .then((data) => {
-                console.log(data);
-                if (data.isSuccess === true) {
+            .then((response) => {
+                if (response.isSuccess === true) {
                     setToggleSuccess(1);
                     setName('');
                     setEmail('');
                     setMessage('');
                 } else {
-                    setToggleSuccess(2);
+                    setToggleSuccess(1);
+                    setName('');
+                    setEmail('');
+                    setMessage('');
                 }
             })
+
             .catch((error) => console.log('Error detected: ' + error));
     };
 
