@@ -266,6 +266,7 @@ textarea {
 
 .about-image-container > * {
     height: 300px;
+    width: auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -289,6 +290,10 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     color: #666;
+}
+
+.image-right-margin {
+    margin-right: 1rem;
 }
 
 /* Projects */
@@ -539,6 +544,9 @@ textarea {
     }
     .about-content-container > * {
         width: 100%;
+    }
+    .double-image-content {
+        width: 75%;
     }
     .about-skills-container > * {
         width: 100%;

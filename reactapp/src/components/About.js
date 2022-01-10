@@ -55,8 +55,8 @@ const About = () => {
                 </div>
             </div>
             <div style={{ marginTop: '5rem' }} className='about-content-container column-reverse-mobile'>
-                <div className='about-image-container'>
-                    <img className='image-curved' src={Basketball} alt='robert-headshot' />
+                <div className='about-image-container double-image-content'>
+                    <img className='image-curved image-right-margin' src={Basketball} alt='robert-headshot' />
                     <img className='image-curved' src={Fishing} alt='robert-headshot' />
                 </div>
 
