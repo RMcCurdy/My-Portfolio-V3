@@ -1,6 +1,6 @@
 import { Element } from 'react-scroll';
 import Headshot from '../images/headshot.png';
-import Basketball from '../images/basketball.png';
+import Basketball from '../images/basketball.jpg';
 import Fishing from '../images/fishing.jpg';
 import Valedictorian from '../images/vale.png';
 
