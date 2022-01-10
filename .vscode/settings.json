@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/6ad3eca9-06ee-4e1f-9f4b-ec90cbbc2ad6/resourceGroups/RobertResourceGroup/providers/Microsoft.Web/sites/robertmdev",
+    "appService.deploySubpath": "reactapp\\build"
+}
