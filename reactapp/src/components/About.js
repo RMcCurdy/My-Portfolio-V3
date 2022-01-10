@@ -30,7 +30,7 @@ const About = () => {
         <Element name='about' className='about-container section-padding'>
             <h1 className='heading-secondary'>About</h1>
             <div className='about-content-container'>
-                <div className='shadow-container'>
+                <div className='about-text-container'>
                     <h2 className='heading-section'>Get to know me!</h2>
                     <p className='paragraph-primary'>
                         I'm a 4th year <span className='about-emphasis-text'>Computer Science</span> student studying at the University of Calgary. I will be graduating with a BSc
@@ -54,13 +54,13 @@ const About = () => {
                     {/* <img src={Headshot} alt='robert-headshot' /> */}
                 </div>
             </div>
-            <div style={{ marginTop: '5rem' }} className='about-content-container'>
+            <div style={{ marginTop: '5rem' }} className='about-content-container column-reverse-mobile'>
                 <div className='about-image-container'>
                     <img className='image-curved' src={Basketball} alt='robert-headshot' />
                     <img className='image-curved' src={Fishing} alt='robert-headshot' />
                 </div>
 
-                <div className='shadow-container'>
+                <div className='about-text-container'>
                     <h2 style={{ marginTop: '0' }} className='heading-section'>
                         My personal life
                     </h2>
@@ -77,7 +77,7 @@ const About = () => {
                 </div>
             </div>
             <div style={{ marginTop: '5rem' }} className='about-skills-container'>
-                <div className='shadow-container'>
+                <div className='about-text-container'>
                     <h2 style={{ marginTop: '0' }} className='heading-section'>
                         My skills and work experience
                     </h2>

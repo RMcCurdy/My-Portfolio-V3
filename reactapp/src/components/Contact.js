@@ -25,7 +25,17 @@ const Contact = () => {
             body: JSON.stringify(mailObject),
         })
             .then((response) => response.text())
-            .then((data) => console.log(data))
+            .then((data) => {
+                console.log(data);
+                if (data.isSuccess === true) {
+                    setToggleSuccess(1);
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                } else {
+                    setToggleSuccess(2);
+                }
+            })
             .catch((error) => console.log('Error detected: ' + error));
     };
 

@@ -247,7 +247,7 @@ textarea {
 
 .about-skills-container {
     display: flex;
-    flex: 1 auto;
+    flex: 1;
     max-width: 75%;
 }
 
@@ -517,32 +517,81 @@ textarea {
 }
 
 /* Media Query */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+/* 1000px and down */
+@media only screen and (max-width: 1500px) {
+    .about-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+    .about-content-container > * {
+        width: 100%;
+    }
+    .about-skills-container > * {
+        width: 100%;
+    }
+}
+
+/* 1000px and down */
+@media only screen and (max-width: 1000px) {
+    .navbar-content-container {
+        padding: 0 1rem;
+    }
+    .heading-primary {
+        font-size: 3rem;
+        padding: 0 0.25rem;
+    }
+    .text-primary {
+        font-size: 1.5rem;
+        padding: 0 0.25rem;
+    }
+    .home-icons {
+        transform: scale(2);
+    }
+    .home-icons-container > * {
+        margin: 0 1.5rem;
+    }
+    .about-image-container > * {
+        height: 250px;
+    }
+}
+
+/* 500px and down */
+@media only screen and (max-width: 500px) {
     .photo-card-container {
         display: block;
-    }
-    .about-content-container {
-        display: block;
-        justify-content: center;
     }
     .photo-card {
         width: 90vw;
     }
+    .heading-primary {
+        font-size: 2.5rem;
+        padding: 0 0.25rem;
+    }
+    .text-primary {
+        font-size: 1.25rem;
+        padding: 0 0.25rem;
+    }
+    .home-icons {
+        transform: scale(1.75);
+    }
+    .home-icons-container > * {
+        margin: 0 1.25rem;
+    }
+    .about-image-container > * {
+        height: 150px;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
