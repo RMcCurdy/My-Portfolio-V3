@@ -99,6 +99,20 @@ textarea {
     box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
 }
 
+.navbar-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    margin-top: 56px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #dadada;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+    font-family: 'Source-B';
+    font-size: 1rem;
+}
+
 .navbar-content-container {
     display: flex;
     justify-content: space-between;
@@ -112,6 +126,10 @@ textarea {
     align-items: center;
     font-family: 'Source-B';
     font-size: 1.2rem;
+}
+
+.navbar-mobile-link {
+    border-bottom: 1px solid #333;
 }
 
 /* Add margin to all children of the navbar-links-container div */
@@ -174,6 +192,11 @@ textarea {
 .robert-sunglasses-icon {
     height: 3rem;
     border-radius: 50%;
+}
+
+.navbar-menu-icon:hover {
+    color: var(--blue);
+    cursor: pointer;
 }
 
 /* Home */
