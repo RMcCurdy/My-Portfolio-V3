@@ -10,30 +10,9 @@ const Footer = () => {
                 <div>
                     <h1 className='footer-header'>Robert McCurdy</h1>
                     <p className='footer-text'>University Student and aspiring Web Developer</p>
-                    {/* <div className='footer-link'>
-                        <Link
-                            style={{ paddingLeft: '0' }}
-                            activeClass='active'
-                            className='footer-link footer-link-color-animation'
-                            to='home'
-                            spy={true}
-                            smooth={true}
-                            duration={500}>
-                            Home
-                        </Link>
-                        <Link activeClass='active' className='footer-link footer-link-color-animation' to='about' spy={true} smooth={true} duration={500}>
-                            About
-                        </Link>
-                        <Link activeClass='active' className='footer-link footer-link-color-animation' to='projects' spy={true} smooth={true} duration={500}>
-                            Projects
-                        </Link>
-                        <Link activeClass='active' className='footer-link footer-link-color-animation' to='contact' spy={true} smooth={true} duration={500}>
-                            Contact
-                        </Link>
-                    </div> */}
                 </div>
                 <div className='footer-icons-container'>
-                    <div className='footer-icons' onClick={() => window.open('https://www.linkedin.com/in/robert-mccurdy/', '_blank')}>
+                    <div className='footer-icons first-icon-mobile' onClick={() => window.open('https://www.linkedin.com/in/robert-mccurdy/', '_blank')}>
                         <LinkedInIcon />
                     </div>
                     <div className='footer-icons' onClick={() => window.open('https://github.com/RMcCurdy', '_blank')}>

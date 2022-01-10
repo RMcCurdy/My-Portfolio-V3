@@ -608,6 +608,18 @@ textarea {
     .contact-content-container {
         width: 20rem;
     }
+    .footer-header {
+        font-size: 1.75rem;
+    }
+    .footer-text {
+        font-size: 1rem;
+    }
+    .footer-icons {
+        transform: scale(1.75);
+    }
+    .footer-copyright-text {
+        font-size: 0.75rem;
+    }
 }
 
 /* 500px and down */
@@ -643,6 +655,24 @@ textarea {
     }
     .contact-content-container {
         width: 60%;
+    }
+    .footer-content-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .footer-icons-container {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    .first-icon-mobile {
+        margin-left: 0.5rem;
+    }
+    .footer-icons {
+        transform: scale(1.5);
+    }
+    .footer-copyright-text {
+        font-size: 0.75rem;
     }
 }
 
