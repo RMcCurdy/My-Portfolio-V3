@@ -8,16 +8,21 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
     const submit = () => {
-        const mailObject = { fromName: name, fromEmail: email, subject: name, body: message };
+        const mailObject = {
+            fromName: name,
+            fromEmail: email,
+            subject: name,
+            body: message,
+        };
+        const url = 'https://robertapi.azurewebsites.net/api/sendmail';
         console.log('Starting fetch');
-        fetch('https://robertapi.azurewebsites.net/api/sendmail', {
+        fetch(url, {
             method: 'POST',
             headers: {
-                Accept: 'application/json, text/plain',
-                'Content-Type': 'application/json;charset=UTF-8',
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
             },
-            mode: 'no-cors',
-            body: mailObject,
+            body: JSON.stringify(mailObject),
         })
             .then((response) => response.text())
             .then((data) => console.log(data))
