@@ -605,6 +605,9 @@ textarea {
         text-align: center;
         padding: 0 1rem;
     }
+    .contact-content-container {
+        width: 20rem;
+    }
 }
 
 /* 500px and down */
@@ -637,6 +640,9 @@ textarea {
     }
     .project-content > * {
         width: 80%;
+    }
+    .contact-content-container {
+        width: 60%;
     }
 }
 
