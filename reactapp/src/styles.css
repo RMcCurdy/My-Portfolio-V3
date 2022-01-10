@@ -107,9 +107,9 @@ textarea {
     margin-top: 56px;
     width: 100%;
     z-index: 1000;
-    background-color: #dadada;
+    background-color: white;
     box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
-    font-family: 'Source-B';
+    font-family: 'Source-R';
     font-size: 1rem;
 }
 
@@ -129,7 +129,9 @@ textarea {
 }
 
 .navbar-mobile-link {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    padding: 0.5rem;
+    text-align: right;
 }
 
 /* Add margin to all children of the navbar-links-container div */
