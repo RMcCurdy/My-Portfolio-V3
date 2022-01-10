@@ -84,7 +84,9 @@ textarea {
 }
 
 .image-curved {
-    border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 500px;
+    border-radius: 10px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 /* Navbar */
@@ -565,6 +567,44 @@ textarea {
     .about-image-container > * {
         height: 250px;
     }
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-content > * {
+        width: 70%;
+    }
+    .heading-project {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .project-description-width {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .project-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+    .project-btn-container > * {
+        margin: 1rem 0.5rem
+    }
+    .image-curved {
+        width: 400px;
+    }
+    .project-btn {
+        font-size: 0.8rem;
+    }
+    .project-image-container {
+        justify-content: center;
+    }
+    .projects-header-margin-bottom {
+        text-align: center;
+        padding: 0 1rem;
+    }
 }
 
 /* 500px and down */
@@ -591,6 +631,12 @@ textarea {
     }
     .about-image-container > * {
         height: 150px;
+    }
+    .image-curved {
+        width: 100%;
+    }
+    .project-content > * {
+        width: 80%;
     }
 }
 

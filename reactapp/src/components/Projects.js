@@ -17,7 +17,7 @@ const Projects = () => {
             <div className='projects-content-container'>
                 <div className='project-content'>
                     <div className='project-image-container'>
-                        <img className='image-curved' style={{ width: '500px' }} src={Bandwagon} alt='myGH' />
+                        <img className='image-curved' src={Bandwagon} alt='myGH' />
                     </div>
 
                     <ProjectsText
@@ -31,7 +31,7 @@ const Projects = () => {
             <div className='projects-content-container'>
                 <div className='project-content'>
                     <div className='project-image-container'>
-                        <img className='image-curved' style={{ width: '500px' }} src={myGH} alt='myGH' />
+                        <img className='image-curved' src={myGH} alt='myGH' />
                     </div>
                     <ProjectsText
                         header='MyGH'
@@ -44,7 +44,7 @@ const Projects = () => {
             <div className='projects-content-container'>
                 <div className='project-content'>
                     <div className='project-image-container'>
-                        <img className='image-curved' style={{ width: '500px' }} src={SkipTheBooks} alt='myGH' />
+                        <img className='image-curved' src={SkipTheBooks} alt='myGH' />
                     </div>
                     <ProjectsText
                         header='SkipTheBooks'
@@ -57,7 +57,7 @@ const Projects = () => {
             <div className='projects-content-container'>
                 <div className='project-content'>
                     <div className='project-image-container'>
-                        <img className='image-curved' style={{ width: '500px' }} src={WaitLess} alt='myGH' />
+                        <img className='image-curved' src={WaitLess} alt='myGH' />
                     </div>
                     <ProjectsText
                         header='WaitLess'
