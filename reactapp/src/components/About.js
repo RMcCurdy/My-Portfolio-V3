@@ -11,7 +11,7 @@ const About = () => {
         <Element name='about' className='about-container section-padding'>
             <h1 className='heading-secondary'>About</h1>
             <div className='about-content-container'>
-                <div>
+                <div className='shadow-container'>
                     <h2 className='heading-section'>Get to know me!</h2>
                     <p className='paragraph-primary'>
                         I'm a 4th year <span className='about-emphasis-text'>Computer Science</span> student studying at the University of Calgary. I am completing my degree in{' '}
@@ -27,17 +27,17 @@ const About = () => {
                     </p>
                 </div>
                 <div className='about-image-container'>
-                    <img src={Valedictorian} alt='robert-headshot' />
+                    <img className='image-curved' src={Valedictorian} alt='robert-headshot' />
                     {/* <img src={Headshot} alt='robert-headshot' /> */}
                 </div>
             </div>
             <div style={{ marginTop: '5rem' }} className='about-content-container'>
                 <div className='about-image-container'>
-                    <img src={Basketball} alt='robert-headshot' />
-                    <img src={Fishing} alt='robert-headshot' />
+                    <img className='image-curved' src={Basketball} alt='robert-headshot' />
+                    <img className='image-curved' src={Fishing} alt='robert-headshot' />
                 </div>
 
-                <div>
+                <div className='shadow-container'>
                     <h2 className='heading-section'>My personal life</h2>
                     <p className='paragraph-primary'>
                         When I'm not learning a new language or framework, I love immersing myself in my favourite hobbies. The two that stand out for me are basketball and
@@ -50,7 +50,7 @@ const About = () => {
                 </div>
             </div>
             <div style={{ marginTop: '5rem' }} className='about-skills-container'>
-                <div>
+                <div className='shadow-container'>
                     <h2 className='heading-section'>My technical skills</h2>
                     <p className='paragraph-primary'>
                         I'm a 4th year Computer Science student studying at the University of Calgary. I am completing my degree in April 2022 with a concentration of study in

@@ -49,6 +49,13 @@ a {
     border-bottom: 2px solid var(--blue);
 }
 
+.heading-project {
+    color: black;
+    font-family: 'Source-B';
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .heading-section {
     color: black;
     font-family: 'Source-B';
@@ -69,6 +76,10 @@ a {
 
 .section-padding {
     padding: 5rem 0;
+}
+
+.image-curved {
+    border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 /* Navbar */
@@ -220,7 +231,7 @@ a {
 
 .about-content-container {
     display: flex;
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .about-content-container > * {
@@ -231,7 +242,7 @@ a {
 
 .about-skills-container {
     display: flex;
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .about-skills-container > * {
@@ -256,7 +267,6 @@ a {
 
 .skills-container {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -280,8 +290,59 @@ a {
     background-color: var(--white-dark);
 }
 
+.projects-header-margin-bottom {
+    margin-bottom: 4rem;
+}
+
 .projects-content-container {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+}
+
+.project-content > * {
+    margin: 0 1rem;
+    width: 50%;
+}
+
+.project-description-width {
+    width: 65%;
+}
+
+.project-image {
+    width: 400px;
+}
+
+.project-image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-btn-container > * {
+    margin-right: 1rem;
+}
+
+.project-btn {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Source-R';
+    color: #ffffff;
+    font-size: 1rem;
+    background: rgba(0, 119, 181, 0.8);
+    padding: 0.75rem 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-btn:hover {
+  background: rgba(0, 119, 181, 0.7);
+  cursor: pointer;
 }
 
 /* Contact */
