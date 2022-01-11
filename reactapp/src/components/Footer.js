@@ -1,7 +1,6 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-// import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -24,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-copyright-container'>
-                <p className='footer-copyright-text'>© Copyright 2022. Made by Robert McCurdy</p>
+                <p className='footer-copyright-text'>© Copyright 2022</p>
             </div>
         </div>
     );
