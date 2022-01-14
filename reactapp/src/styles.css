@@ -717,6 +717,9 @@ textarea {
     .footer-copyright-text {
         font-size: 0.75rem;
     }
+    .project-description-width {
+        margin-bottom: 0.75rem;
+    }
 }
 
 

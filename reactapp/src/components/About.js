@@ -13,6 +13,8 @@ const About = () => {
         'Git',
         'NodeJS',
         'ES6',
+        'TypeScript',
+        'Tailwind',
         'Python',
         'Java',
         'LaTeX',

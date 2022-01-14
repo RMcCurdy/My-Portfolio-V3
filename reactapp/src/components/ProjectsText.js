@@ -5,6 +5,7 @@ const ProjectsText = (props) => {
         <div>
             <h1 className='heading-project'>{props.header}</h1>
             <p className='paragraph-primary project-description-width'>{props.description}</p>
+            <p className='paragraph-primary project-description-width'>{props.created}</p>
             <div className='project-btn-container'>
                 {props.buttonLabel.map((label, index) => {
                     return (
