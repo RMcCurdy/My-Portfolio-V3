@@ -3,6 +3,7 @@ import myGH from '../images/myGH.png';
 import Bandwagon from '../images/games-homepage2.png';
 import SkipTheBooks from '../images/SkipTheBooks2.png';
 import WaitLess from '../images/WaitLess.png';
+import DiscordBot from '../images/discord-preview.png';
 import ProjectsText from './ProjectsText';
 
 const Projects = () => {
@@ -73,7 +74,7 @@ const Projects = () => {
             <div className='projects-content-container'>
                 <div className='project-content'>
                     <div className='project-image-container'>
-                        <img className='image-curved' src={WaitLess} alt='myGH' />
+                        <img className='image-curved' src={DiscordBot} alt='myGH' />
                     </div>
                     <ProjectsText
                         header={`Rob's Discord Bot`}
